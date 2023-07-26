@@ -12,8 +12,8 @@
   </button>
 </mat-toolbar>
 <mat-menu #animals="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+  <button mat-menu-item [matMenuTriggerFor]="vertebrates" [route] = "vert">Vertebrates</button>
+  <button mat-menu-item [matMenuTriggerFor]="invertebrates" [inv] = "vert">Invertebrates</button>
 </mat-menu>
 
 <mat-menu #vertebrates="matMenu">
