@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BirdsListComponent } from './birds-list.component';
+import { MenuTwoComponent } from './menu-two.component';
 
-describe('BirdsListComponent', () => {
-  let component: BirdsListComponent;
-  let fixture: ComponentFixture<BirdsListComponent>;
+describe('MenuTwoComponent', () => {
+  let component: MenuTwoComponent;
+  let fixture: ComponentFixture<MenuTwoComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BirdsListComponent]
+      declarations: [MenuTwoComponent]
     });
-    fixture = TestBed.createComponent(BirdsListComponent);
+    fixture = TestBed.createComponent(MenuTwoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

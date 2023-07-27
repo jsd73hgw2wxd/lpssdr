@@ -5,21 +5,24 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BirdsListComponent } from './birds-list/birds-list.component';
+import { MenuOneComponent } from './menu-one/menu-one.component';
+import { MenuTwoComponent } from './menu-two/menu-two.component';
+import { MenuThreeComponent } from './menu-three/menu-three.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'birds', component: BirdsListComponent },
+      { path: '', component: MenuOneComponent },
+      { path: 'menu1', component: MenuOneComponent },
+      { path: 'menu2', component: MenuTwoComponent },
+      { path: 'menu3', component: MenuThreeComponent },
     ]),
     MatToolbarModule, MatButtonModule, MatIconModule,MatMenuModule,
     BrowserAnimationsModule
@@ -27,8 +30,9 @@ import { BirdsListComponent } from './birds-list/birds-list.component';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent,
-    BirdsListComponent
+    MenuOneComponent,
+    MenuTwoComponent,
+    MenuThreeComponent,
   ],
   bootstrap: [
     AppComponent
