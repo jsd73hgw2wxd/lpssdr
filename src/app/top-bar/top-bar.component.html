@@ -12,16 +12,16 @@
   </button>
 </mat-toolbar>
 <mat-menu #animals="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="vertebrates" [route] = "vert">Vertebrates</button>
-  <button mat-menu-item [matMenuTriggerFor]="invertebrates" [inv] = "vert">Invertebrates</button>
+  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
 </mat-menu>
 
 <mat-menu #vertebrates="matMenu">
   <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
   <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
   <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
-  <button mat-menu-item>Birds</button>
-  <button mat-menu-item>Mammals</button>
+  <button mat-menu-item routerLink="birds">Birds</button>
+  <button mat-menu-item routerLink="mammals">Mammals</button>
 </mat-menu>
 
 <mat-menu #invertebrates="matMenu">

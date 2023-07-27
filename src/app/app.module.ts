@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BirdsListComponent } from './birds-list/birds-list.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'birds', component: BirdsListComponent },
     ]),
     MatToolbarModule, MatButtonModule, MatIconModule,MatMenuModule,
     BrowserAnimationsModule
@@ -25,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    BirdsListComponent
   ],
   bootstrap: [
     AppComponent
